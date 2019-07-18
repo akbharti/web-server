@@ -22,7 +22,7 @@ app.use(middleware.logger);
 //app.use(middleware.requireAuthentication);  // Appln level middleware(execute when every route hit or on every hit)
 
 app.get('/about',middleware.requireAuthentication,(req,res) =>{
-        res.send('about us ');
+        res.send('about us !');
 })
 
 app.use(express.static(__dirname + '/public'));  // server will use this file if non is specified
